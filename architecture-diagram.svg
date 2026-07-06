@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1240 640" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <rect x="0" y="0" width="1240" height="640" fill="#FBFBFA"/>
+
+  <text x="40" y="50" font-size="26" fill="#1E293B" font-weight="bold">Startup Validator Agent Fleet — Architecture</text>
+  <text x="40" y="76" font-size="14" fill="#666" font-family="Helvetica, Arial, sans-serif">Fully autonomous pipeline · no human-approval gate · Google ADK 2.3</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1E293B"/>
+    </marker>
+  </defs>
+
+  <!-- User input -->
+  <rect x="30" y="150" width="150" height="70" fill="#F7F7F6" stroke="#E5E5E0" stroke-width="1.5"/>
+  <text x="105" y="180" font-size="14" fill="#262626" text-anchor="middle" font-weight="bold">User Input</text>
+  <text x="105" y="200" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">any idea, any scale</text>
+
+  <line x1="180" y1="185" x2="228" y2="185" stroke="#1E293B" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Agent 1 -->
+  <rect x="230" y="140" width="220" height="90" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="340" y="165" font-size="15" fill="#1E293B" text-anchor="middle" font-weight="bold">Agent 1</text>
+  <text x="340" y="184" font-size="13" fill="#262626" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">brutal_vc_analyst</text>
+  <text x="340" y="202" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">no tools</text>
+  <text x="340" y="217" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">→ StartupBlueprint</text>
+
+  <line x1="450" y1="185" x2="498" y2="185" stroke="#1E293B" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Agent 2 -->
+  <rect x="500" y="140" width="220" height="90" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="610" y="165" font-size="15" fill="#1E293B" text-anchor="middle" font-weight="bold">Agent 2</text>
+  <text x="610" y="184" font-size="13" fill="#262626" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">market_risk_quant</text>
+  <text x="610" y="202" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">no tools</text>
+  <text x="610" y="217" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">→ MarketRiskAnalysis</text>
+
+  <line x1="720" y1="185" x2="768" y2="185" stroke="#1E293B" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Agent 3 -->
+  <rect x="770" y="140" width="220" height="90" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="880" y="165" font-size="15" fill="#1E293B" text-anchor="middle" font-weight="bold">Agent 3</text>
+  <text x="880" y="184" font-size="13" fill="#262626" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">master_liaison</text>
+  <text x="880" y="202" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">tools = [write_pitch_deck]</text>
+  <text x="880" y="217" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">only agent that outputs to user</text>
+
+  <line x1="990" y1="170" x2="1028" y2="170" stroke="#1E293B" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="990" y1="200" x2="1028" y2="200" stroke="#1E293B" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Outputs -->
+  <rect x="1030" y="130" width="180" height="45" fill="#F7F7F6" stroke="#E5E5E0" stroke-width="1.5"/>
+  <text x="1120" y="157" font-size="13" fill="#262626" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">index.html (report)</text>
+
+  <rect x="1030" y="185" width="180" height="45" fill="#F7F7F6" stroke="#E5E5E0" stroke-width="1.5"/>
+  <text x="1120" y="212" font-size="13" fill="#262626" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">session_output.json</text>
+
+  <!-- MCP branch -->
+  <line x1="610" y1="230" x2="610" y2="300" stroke="#1E293B" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow)"/>
+  <rect x="500" y="305" width="220" height="80" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="610" y="330" font-size="14" fill="#1E293B" text-anchor="middle" font-weight="bold">MCP Server</text>
+  <text x="610" y="349" font-size="12" fill="#262626" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">analyze_market_risk</text>
+  <text x="610" y="366" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">standalone — independent of pipeline</text>
+
+  <!-- Dashboard (routed below the MCP box, not through it) -->
+  <line x1="1120" y1="230" x2="1120" y2="460" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="1120" y1="460" x2="700" y2="460" stroke="#1E293B" stroke-width="1.5"/>
+  <line x1="700" y1="460" x2="700" y2="483" stroke="#1E293B" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="590" y="485" width="220" height="80" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="700" y="510" font-size="14" fill="#1E293B" text-anchor="middle" font-weight="bold">Next.js Dashboard</text>
+  <text x="700" y="529" font-size="12" fill="#262626" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">reads session_output.json</text>
+  <text x="700" y="546" font-size="11" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">serves report at /api/pitch-deck</text>
+
+  <!-- Skills note -->
+  <rect x="230" y="580" width="760" height="40" fill="none" stroke="#E5E5E0" stroke-width="1"/>
+  <text x="610" y="605" font-size="12" fill="#666" text-anchor="middle" font-family="Helvetica, Arial, sans-serif">Each agent has a scoped SKILL.md (role, inputs, outputs, constraints, failure modes) — Agent Skills concept</text>
+</svg>
