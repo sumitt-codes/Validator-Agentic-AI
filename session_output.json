@@ -1,0 +1,27 @@
+{
+  "raw_idea": "A luxury EV bike rental app in Pune targeting corporate commuters with a premium subscription layer.",
+  "timestamp": "2026-07-05T09:02:14.566898Z",
+  "blueprint": {
+    "industry": "Micromobility Rental",
+    "complexity_tier": "High",
+    "immediate_competitors": [
+      "Yulu",
+      "Bounce"
+    ],
+    "brutal_premise_flaw": "Corporate commuters prioritize reliability, cost-effectiveness, and convenience for daily travel; 'luxury' in a rental bike offers no tangible benefit to these core needs and dramatically increases operational overhead and pricing resistance."
+  },
+  "market_risk": {
+    "tam_estimate": "USD 36 million annually (Total micromobility market in Pune)",
+    "sam_estimate": "USD 10.8 million annually (Premium EV bike rental for corporate commuters in Pune)",
+    "som_estimate": "USD 0.54 million annually (First 1-3 years market share for a new luxury EV bike rental in Pune)",
+    "risk_score": 85,
+    "success_probability": 10,
+    "market_blockers": [
+      "Demand-side misalignment: The 'luxury' value proposition fundamentally contradicts corporate commuters' primary needs for cost-effectiveness, reliability, and convenience in daily travel.",
+      "Intense price competition: Established players like Yulu and Bounce offer significantly cheaper and more practical alternatives, creating strong pricing resistance for a premium service.",
+      "High operational overhead: Acquiring, maintaining, and insuring a fleet of luxury EV bikes is substantially more expensive, leading to higher unit economics that are difficult to pass on to price-sensitive commuters.",
+      "Strong incumbent network effects: Existing micromobility providers have established charging infrastructure, parking zones, and user bases, creating high barriers to entry for a new, premium service.",
+      "Limited market size for 'luxury rental commute': The actual addressable market for individuals willing to pay a significant premium for a 'luxury' rental bike for daily commuting is likely extremely small, if it exists at all."
+    ]
+  }
+}
